@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#last {
+  position: relative;
+  left: 210px;
+  top: -179px;
+}
+
+#elements {
+  position: relative;
+  left: 0%;
+  margin: 15px 15px;
+}
+
+#head {
+  text-align: left;
+  margin: 10px 15px;
+  background-color: aqua;
+  font-size: 40px;
+}
+
+#para {
+  text-align: left;
+  box-sizing: border-box;
+  margin: 15px;
+}
