@@ -10,6 +10,14 @@
   padding: 0px;
   box-sizing: border-box;
 }
+html::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border-radius: 5px;
+}
+html::-webkit-scrollbar {
+  background-color: var(--white);
+  width: 10px;
+}
 
 body {
   background-color: white;
