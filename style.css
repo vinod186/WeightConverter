@@ -1,33 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Tajawal:wght@400;500;800&display=swap');
+
+:root {
+  --main: rgb(243, 116, 141);;
+  --white: #ffffff;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-body{
-  background-color: rgba(128, 128, 128, 0.151);
+
+body {
+  background-color: white;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
 }
 
-#last {
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Lobster", cursive;
+  color: var(--main);
+}
+
+.container{
+  max-width: 550px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid none;
+  border-radius: 25px;
+  background-color: var(--main);
+}
+p{
+  text-align: center;
+}
+.container .row{
+  margin: 1rem;
+  width: 80%;
+}
+.element-wrapper{
   position: relative;
-  left: 210px;
-  top: -179px;
+}
+.element-wrapper > input {
+  position: absolute;
+  right: 0px;
 }
 
-#elements {
-  position: relative;
-  left: 0%;
-  margin: 15px 15px;
+@media screen and (max-width:768) {
+  .container{
+    width: 70%;
+  }
 }
 
-#head {
-  text-align: left;
-  margin: 10px 15px;
-  background-color: aqua;
-  font-size: 40px;
-}
 
-#para {
-  text-align: left;
-  box-sizing: border-box;
-  margin: 15px;
-}
+

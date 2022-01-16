@@ -5,30 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weight Converter</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="head">
-      <h1>Weight Converter</h1>
-    </div>
-    <div id="para">
-      Type a value in any of the field to convert between weight measurement
-    </div>
-    <div id="elements">
-      pounds <br />
-      <input type="number" id="pd" oninput="pound_converter(this.value)" />
-      <br /><br />
-      Ounces <br />
-      <input type="number" id="oz" /> <br /><br />
-      stones <br />
-      <input type="number" id="st" oninput="stones_converter(this.value)" />
-      <br /><br />
-    </div>
-    <div id="last">
-      Killogram <br />
-      <input type="number" id="kg" /> <br /><br />
-      gram <br />
-      <input type="number" id="gm" /> <br /><br />
+    <h1>Weight Converter</h1>
+    <div class="container">
+      <p class="row">
+        Type a value in any of the field to convert between weight measurement
+      </p>
+      <div id="elements" class="row">
+        <div class="element-wrapper">
+          Pounds
+          <input
+            type="number"
+            id="pd"
+            oninput="converter(this.id,this.value)"
+          />
+        </div>
+
+        <div class="element-wrapper">
+          Ounces
+          <input
+            type="number"
+            id="oz"
+            oninput="converter(this.id,this.value)"
+          />
+        </div>
+
+        <div class="element-wrapper">
+          Stones
+          <input
+            type="number"
+            id="st"
+            oninput="converter(this.id,this.value)"
+          />
+        </div>
+
+        <div class="element-wrapper">
+          Killogram
+          <input
+            type="number"
+            id="kg"
+            oninput="converter(this.id,this.value)"
+          />
+        </div>
+
+        <div class="element-wrapper">
+          Grams
+          <input
+            type="number"
+            id="gm"
+            oninput="converter(this.id,this.value)"
+          />
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
