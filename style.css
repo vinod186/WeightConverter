@@ -19,17 +19,19 @@ body {
   flex-direction: column;
   align-items: center;
   color: var(--white);
+  font-size: 2rem;
 }
 
 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: "Lobster", cursive;
   color: var(--main);
 }
 
 .container {
-  max-width: 550px;
+  max-width: 1000px;
+  width: 80%;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -48,17 +50,57 @@ p {
   margin: 1rem;
   width: 80%;
 }
+
 .element-wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.element-wrapper > span {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .element-wrapper > input {
-  position: absolute;
-  right: 0px;
+  height: 2rem;
+  width: 90%;
+  color: var(--main);
+  font-size: 2rem;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
   .container {
     width: 70%;
+  }
+  body,
+  .element-wrapper > input {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  input {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    width: 90%;
+  }
+  body,
+  .element-wrapper > input {
+    font-size: 1.7rem;
+  }
+  h1 {
+    font-size: 2.6rem;
   }
 }
