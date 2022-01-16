@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Tajawal:wght@400;500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Tajawal:wght@400;500;800&display=swap");
 
 :root {
-  --main: rgb(243, 116, 141);;
+  --main: rgb(243, 116, 141);
   --white: #ffffff;
 }
 
@@ -28,7 +28,7 @@ h1 {
   color: var(--main);
 }
 
-.container{
+.container {
   max-width: 550px;
   margin-top: 2rem;
   display: flex;
@@ -39,26 +39,26 @@ h1 {
   border-radius: 25px;
   background-color: var(--main);
 }
-p{
+
+p {
   text-align: center;
 }
-.container .row{
+
+.container .row {
   margin: 1rem;
   width: 80%;
 }
-.element-wrapper{
+.element-wrapper {
   position: relative;
 }
+
 .element-wrapper > input {
   position: absolute;
   right: 0px;
 }
 
-@media screen and (max-width:768) {
-  .container{
+@media screen and (max-width: 768) {
+  .container {
     width: 70%;
   }
 }
-
-
-
