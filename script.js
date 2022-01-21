@@ -4,8 +4,7 @@ function converter(unit, qty) {
   let gma = 0;
   let oza = 0;
   let st = 0;
-  qty = Number.parseFloat(qty);
-  if (!isNaN(qty)) {
+  qty = Number(qty);
     switch (unit) {
       case "kg":
         st = qty * 0.1575;
@@ -42,10 +41,7 @@ function converter(unit, qty) {
         gma = qty * 6350.3;
         oza = qty * 224;
         break;
-      default:
-        alert("something went wrong.");
     }
-  }
   document.getElementById("kg").value = kga;
   document.getElementById("oz").value = oza;
   document.getElementById("gm").value = gma;
